@@ -1,0 +1,140 @@
+.content {
+  overflow: auto;
+  padding-bottom: 200px;
+}
+.content .item {
+  color: #212121;
+}
+.content .item__container {
+  display: flex;
+  position: relative;
+  gap: 80px;
+}
+.content .item__photo {
+  max-width: 760px;
+  max-height: 516px;
+  z-index: 0;
+  transition: 1s;
+}
+.content .item__photo:hover {
+  transform: scale(1.1);
+}
+.content .item__info {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.content .item__header {
+  position: relative;
+  left: -120px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.content .item__category {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.content .item__name {
+  min-width: 490px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 30px;
+}
+.content .item__vendor-code {
+  color: #b7b7b7;
+  font-size: 15px;
+}
+.content .item .volume-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  font-weight: 500;
+}
+.content .item__volume {
+  font-size: 12px;
+  border: 1px #2d2d2d solid;
+  padding: 8px 15px;
+}
+.content .item__volume-unit {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.content .item .price-wrapper {
+  display: flex;
+  gap: 15px;
+  font-weight: 400;
+}
+.content .item__price {
+  font-size: 25px;
+  color: #2d2d2d;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 25px;
+}
+.content .item__price_old {
+  color: #858585;
+}
+.content .item__basket-button {
+  border: none;
+  background-color: black;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: white;
+  width: 350px;
+  height: 50px;
+}
+.content .item__bottom-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 0 500px;
+}
+.content .item .menu {
+  display: flex;
+  gap: 20px;
+  color: #9f9f9f;
+  border-bottom: 0.5px solid #c9c9c9;
+}
+.content .item .menu__elem {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.content .item .menu__elem_active {
+  color: black;
+}
+.content .item .menu__elem_active::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.content .item__about {
+  padding: 20px 0;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: black;
+}
+.content .item__info-title {
+  display: inline;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=devicePage.css.map */

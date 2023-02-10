@@ -1,0 +1,45 @@
+.sort-select {
+  width: fit-content;
+  position: relative;
+}
+
+.sort-selector {
+  z-index: 5;
+  width: 180px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.sort-option {
+  display: none;
+  width: 260px;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  left: -20px;
+  text-transform: lowercase;
+  padding: 10px 20px;
+  background: white;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.sort-option__elem {
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.sort-option_active {
+  display: flex;
+}
+
+/*# sourceMappingURL=sortSelect.css.map */

@@ -1,0 +1,99 @@
+.adminBackground {
+  display: none;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.adminBackground_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminModal {
+  background-color: white;
+  padding: 20px 30px;
+}
+.adminModal__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+}
+.adminModal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adminModal__close-button {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.adminModal__close-button_transform {
+  transform: rotate(45deg);
+  align-self: flex-end;
+}
+.adminModal__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.adminModal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.adminModal__input {
+  display: block;
+  width: 300px;
+  cursor: text;
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+  padding: 5px 0;
+}
+.adminModal__input:focus {
+  display: inline;
+  color: black;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.adminModal__input_small {
+  width: 140px;
+}
+.adminModal__input::-webkit-outer-spin-button, .adminModal__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.adminModal input[type=file] {
+  width: 300px;
+}
+.adminModal__select {
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+  color: #858585;
+  padding: 5px 0;
+}
+.adminModal__select:focus {
+  color: black;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.adminModal__button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  padding: 10px 0;
+  font-weight: 500;
+}
+.adminModal__button_disabled {
+  color: #858585;
+}
+
+/*# sourceMappingURL=adminModal.css.map */

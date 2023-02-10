@@ -1,0 +1,90 @@
+.background {
+  display: flex;
+  opacity: 0;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 20;
+  transition: 0.5s ease-in-out;
+}
+.background_active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  width: 50%;
+  min-height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -100%;
+  transition: right 0.5s;
+}
+.modal_active {
+  right: 0;
+}
+.modal__close-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.modal__title {
+  font-weight: 600;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal__error {
+  color: #c20101;
+  margin-bottom: -10px;
+  font-size: 10px;
+}
+.modal__input {
+  display: block;
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+  padding: 5px 0;
+}
+.modal__input:focus {
+  color: black;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.modal__redirect {
+  margin: 10px 0 30px;
+  font-size: 14px;
+  color: #737373;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.modal__redirect:hover {
+  color: black;
+}
+.modal__button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=authModal.css.map */

@@ -1,0 +1,25 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  text-decoration: underline;
+}
+
+.input {
+  display: block;
+  width: 300px;
+  cursor: text;
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+  padding: 5px 0;
+}
+.input:focus {
+  display: inline;
+  color: black;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+/*# sourceMappingURL=input.css.map */

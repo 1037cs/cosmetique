@@ -1,0 +1,120 @@
+.adminBackground {
+  display: none;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+
+  &_active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.adminModal {
+  background-color: white;
+  padding: 20px 30px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+
+  }
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__close-button{
+    width: 10px;
+    height: 10px;
+
+    cursor: pointer;
+
+    &_transform{
+      transform: rotate(45deg);
+      align-self: flex-end;
+    }
+  }
+
+  &__title{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__input {
+    display: block;
+    width: 300px;
+    cursor: text;
+
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+
+    padding: 5px 0;
+
+    &:focus{
+      display: inline;
+      color: black;
+      outline: none;
+      border-bottom: 1px solid black;
+    }
+
+    &_small{
+      width: 140px;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  input[type="file"]{
+    width: 300px;
+  }
+
+  &__select {
+    display: block;
+    width: 300px;
+
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+    color: #858585;
+
+    padding: 5px 0;
+
+    &:focus{
+      color: black;
+      outline: none;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    padding: 10px 0;
+    font-weight: 500;
+
+    &_disabled{
+      color: #858585;
+    }
+  }
+}

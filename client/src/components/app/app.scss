@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  cursor: default;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  min-width: fit-content;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+  position: relative;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  cursor: pointer;
+}
+
+$primaryColor: #ED7B84;
+
+.wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+  z-index: 1;
+
+
+  @media (max-width: 1250px) {
+    .wrapper__ellipse {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  font-weight: 200;
+  font-size: 35px;
+  color: $primaryColor;
+}
+
+.link {
+  max-width: 20px;
+  max-height: 20px;
+  cursor: pointer;
+
+  &_settings:hover{
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+
+  @keyframes rotate {
+    from{
+      rotate: 0;
+    }
+    to{
+      rotate:360deg
+    }
+  }
+
+  &:hover{
+    fill: $primaryColor;
+  }
+}
+
+//--------------------------------------------

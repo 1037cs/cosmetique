@@ -1,0 +1,30 @@
+.nav-modal-background {
+  display: none;
+  width: 100%;
+  padding: 20px 0;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  z-index: 20;
+  transition: 0.5s ease-in-out;
+}
+.nav-modal-background .wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 10px;
+  justify-items: center;
+}
+.nav-modal-background_active {
+  display: block;
+}
+.nav-modal-background .nav-modal__elem {
+  font-size: 15px;
+  font-weight: 400;
+  color: #858585;
+  cursor: pointer;
+}
+.nav-modal-background .nav-modal__elem:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=navModal.css.map */

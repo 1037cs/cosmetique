@@ -1,0 +1,22 @@
+.content {
+  padding-bottom: 200px;
+}
+.content__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 40px;
+  grid-auto-flow: row;
+}
+@media (max-width: 1200px) {
+  .content__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .content__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*# sourceMappingURL=DeviceList.css.map */
